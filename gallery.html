@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        function expandVideo() {
+            document.getElementById("myVideo").classList.toggle("active");
+        }
+    </script>
+    <style>
+        .gallery-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 40px 0;
+        }
+
+        .gallery-title .char {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="topone">
+        <div id="call"></div>
+        <p class="num">(044) 48676178 / 24766178</p>
+        <div id="mail"></div>
+        <p class="emaill">admin@amaps.edu.in</p>
+        <div id="loca"></div>
+        <p class="addres">Alapakkam Main Road, Porur Post, Chennai – 600116.</p>
+        <p class="coll">Affiliated to CBSE, New Delhi, Affiliation No-1930379</p>
+
+    </div>
+
+    <div class="loader-wrapper">
+        <img src="assets/image/22.png" class="loggo">
+    </div>
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container">
+            <img src="assets/image/amaps-new-logo-g.png" class="logoo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto" style="position: relative; right: -300px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="index.html"
+                                style="position: relative;bottom: 8px; right: 3px; color: black; text-decoration: none;">Home</a></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" data-bs-toggle="dropdown"
+                            style="bottom: 0px;margin-left: 20px; position: relative;">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="faculty.html"
+                                style="position: relative; bottom:8px; margin-left: 20px; color: black; text-decoration: none;">Faculty</a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="contact.html"
+                                style="position: relative; bottom: 8px; margin-left: 20px; color: black; text-decoration: none;">Contact</a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="Mandatory .html"
+                                style="position: relative; bottom: 8px; margin-left: 20px; color: black; text-decoration: none;">Mandatory
+                                Disclosure</a></a>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+            <div class="second">
+                <a href="https://mat.org.in/" style="cursor: pointer;" target="_blank">
+                    <img src="assets/image/MGI-Logo1.png" width="200px"></a>
+            </div>
+        </div>
+    </nav>
+    <div id="admissionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+
+            <img src="assets/image/qr.jpg" alt="QR Code" width="200">
+
+            <p>SCAN HERE FOR ADMISSION</p>
+
+            <button class="admission-btn"><a href="enquiry.html" style="text-decoration: none; color: black;">Click Here
+                    for Admission</a></button>
+        </div>
+    </div>
+    <section class="video-section">
+        <img src="assets/image/skin_awareness.jpg" width="1520px" height="450px">
+        <div class="overlay"></div>
+        <div class="video-text">
+            <h1>GALLERY</h1>
+            <p>Home > Gallery</p>
+        </div>
+    </section>
+    <div class="scroll-container">
+        <div class="scroll-text">
+            Admission for KG to class VII is in progress. | A few vacancies in all subjects are available. Send your
+            resumes to <span id="col"> director24.meenakshi@gmail.com.</span>
+        </div>
+    </div>
+    <h1 class="gallery-title">
+        Gallery - Explore AMAPS Campus Life & Vibrant Activities
+    </h1>
+
+    <section class="video">
+        <div class="gal">
+            <h3>GALLERY</h3>
+            <h2>Explore Our Moments</h2>
+        </div>
+        <div class="year">
+            <p class="yr-one">ALL</p>
+            <p class="yr-two">2025-26</p>
+            <p class="yr-three">2024-25</p>
+        </div>
+
+        <div class="video-container">
+            <video id="myVideo" controls onclick="expandVideo()">
+                <source src="assets/video/amaps_kg.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <div class="gallery">
+        <a href="#img1">
+            <img src="assets/image/h1.jpg">
+        </a>
+
+        <a href="#img2">
+            <img src="assets/image/h2.jpg">
+        </a>
+
+        <a href="#img3">
+            <img src="assets/image/h3.jpg">
+        </a>
+        <div id="img1" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <a href="#">
+                <img src="assets/image/h1.jpg">
+            </a>
+        </div>
+
+        <div id="img2" class="lightbox">
+
+            <a href="#" class="close">&times;</a>
+            <a href="#">
+                <img src="assets/image/h2.jpg">
+            </a>
+        </div>
+
+        <div id="img3" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <a href="#">
+                <img src="assets/image/h3.jpg">
+            </a>
+        </div>
+        <img src="assets/image/h4.jpg" alt="">
+        <img src="assets/image/h12.jpg" alt="">
+        <img src="assets/image/h13.jpg" alt="">
+        <img src="assets/image/h41.jpeg" alt="">
+        <img src="assets/image/h30.jpeg" alt="">
+        <img src="assets/image/h31.jpeg" alt="">
+        <img src="assets/image/h32.jpeg" alt="">
+        <img src="assets/image/h33.jpeg" alt="">
+        <img src="assets/image/h34.jpeg" alt="">
+        <img src="assets/image/h35.jpeg" alt="">
+        <img src="assets/image/h36.jpeg" alt="">
+        <img src="assets/image/h37.jpeg" alt="">
+        <img src="assets/image/h38.jpeg" alt="">
+        <img src="assets/image/h39.jpeg" alt="">
+        <img src="assets/image/h42.jpeg" alt="">
+        <img src="assets/image/h43.jpg" alt="">
+        <img src="assets/image/ca_01.jpg" alt="">
+        <img src="assets/image/ca_02.jpg" alt="">
+        <img src="assets/image/ca_03.jpg" alt="">
+        <img src="assets/image/ca_04.jpg" alt="">
+        <img src="assets/image/ca_06.jpg" alt="">
+        <img src="assets/image/ca_05.jpg" alt="">
+        <img src="assets/image/ca_08.jpg" alt="">
+        <img src="assets/image/ca_07.jpg" alt="">
+        <img src="assets/image/ca_09.jpg" alt="">
+        <img src="assets/image/ind_1.jpg" alt="">
+        <img src="assets/image/ind_2.jpg" alt="">
+        <img src="assets/image/ind_3.jpg" alt="">
+        <img src="assets/image/ca_13.jpg" alt="">
+        <img src="assets/image/ca_14.jpg" alt="">
+        <img src="assets/image/ca_15.jpg" alt="">
+        <img src="assets/image/ca_16.jpg" alt="">
+        <img src="assets/image/ca_17.jpg" alt="">
+        <img src="assets/image/ca_18.jpg" alt="">
+        <img src="assets/image/ca_19.jpg" alt="">
+        <img src="assets/image/ca_20.jpg" alt="">
+        <img src="assets/image/ca_21.jpg" alt="">
+        <img src="assets/image/ca_22.jpg" alt="">
+        <img src="assets/image/ca_23.jpg" alt="">
+        <img src="assets/image/ind_4.jpg" alt="">
+        <img src="assets/image/ind_5.jpg" alt="">
+        <img src="assets/image/ic_1.jpg" alt="">
+        <img src="assets/image/ic_2.jpg" alt="">
+        <img src="assets/image/ic_3.jpg" alt="">
+        <img src="assets/image/ic_4.jpg" alt="">
+        <img src="assets/image/ic_5.jpg" alt="">
+        <img src="assets/image/ic_6.jpg" alt="">
+        <img src="assets/image/ic_7.jpg" alt="">
+        <img src="assets/image/ic_8.jpeg" alt="">
+        <img src="assets/image/ic_9.jpg" alt="">
+        <img src="assets/image/ic_10.jpg" alt="">
+        <img src="assets/image/ic_11.jpg" alt="">
+        <img src="assets/image/kam_1.jpg" alt="">
+        <img src="assets/image/kam_2.jpg" alt="">
+        <img src="assets/image/kam_3.jpg" alt="">
+        <img src="assets/image/kam_4.jpg" alt="">
+        <img src="assets/image/yog_1.jpg" alt="">
+        <img src="assets/image/yog_2.jpg" alt="">
+        <img src="assets/image/childrens_day.jpg" alt="">
+        <img src="assets/image/cubs&bulbul.jpg" alt="">
+        <img src="assets/image/dental_orientation.jpg" alt="">
+        <img src="assets/image/girls_safety_awareness.jpg" alt="">
+        <img src="assets/image/skin_checkup.jpg" alt="">
+        <img src="assets/image/teachersday.jpg" alt="">
+        <img src="assets/image/01.jpg" alt="">
+        <img src="assets/image/02.jpg" alt="">
+        <img src="assets/image/03.jpg" alt="">
+        <img src="assets/image/04.jpg" alt="">
+        <img src="assets/image/05.jpg" alt="">
+        <img src="assets/image/h21.jpg" alt="">
+        <img src="assets/image/g7.jpg" alt="">
+        <img src="assets/image/g8.jpg" alt="">
+        <img src="assets/image/g9.jpg" alt="">
+        <img src="assets/image/h17.jpg" alt="">
+        <img src="assets/image/h18.jpg" alt="">
+        <img src="assets/image/h19.jpg" alt="">
+        <img src="assets/image/h20.jpg" alt="">
+        <img src="assets/image/ca_02.jpg" alt="">
+        <img src="assets/image/ca_15.jpg" alt="">
+    </div>
+
+
+
+    <footer class=" text-dark pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/image/amaps-b.png">
+                    <p>
+                        Arulmigu Meenakshi Amman Public School,
+                        Porur, Chennai.
+                    </p>
+                </div>
+                <div class="col-md-4 main">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled mainn">
+                        <li><a href="#" class="text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-decoration-none">Mandatory</a></li>
+                        <li><a href="#" class="text-decoration-none">Faculty</a></li>
+                        <li><a href="#" class="text-decoration-none">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 last">
+                    <h5>Location</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15547.368265143805!2d80.165082!3d13.045723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526117e3805051%3A0xe285805e419b4630!2sArulmigu%20Meenakshi%20Amman%20Public%20School!5e0!3m2!1sen!2sus!4v1771629178960!5m2!1sen!2sus"
+                        width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">
+                    © 2026 AMAPS School. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const galleryTitle = document.querySelector(".gallery-title");
+
+        // Split each character into a span
+        const chars = galleryTitle.textContent.split("");
+        galleryTitle.innerHTML = chars.map(c =>
+            c === " " ? `<span class="char-space">&nbsp;</span>` : `<span class="char">${c}</span>`
+        ).join("");
+
+        // Animate each character
+        anime({
+            targets: '.gallery-title .char',
+            translateY: [
+                { value: '-2rem', duration: 600, easing: 'easeOutExpo' },
+                { value: 0, duration: 800, delay: 100, easing: 'easeOutBounce' }
+            ],
+            rotate: [
+                { value: '1turn', duration: 1400, easing: 'easeInOutCirc' }
+            ],
+            delay: anime.stagger(50),
+            loop: true,
+            loopDelay: 1000,
+            easing: 'easeInOutQuad'
+        });
+
+        const galleryImgs = document.querySelectorAll(".gallery img");
+
+        anime({
+            targets: galleryImgs,
+            translateY: [
+                { value: -50, duration: 1000, easing: 'easeInOutSine' },
+                { value: 30, duration: 1000, easing: 'easeInOutSine' }
+            ],
+            delay: anime.stagger(50),
+            loop: true,
+            direction: 'alternate'
+        });;
+    });
+</script>
+<script>
+    function closeModal() {
+        document.getElementById("admissionModal").style.display = "none";
+    }
+</script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('call'),
+            loop: true,
+            autoplay: true,
+            path: 'call.json'
+        });
+    </script>
+
+     <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('mail'),
+            loop: true,
+            autoplay: true,
+            path: 'email.json'
+        });
+    </script>
+
+        <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('loca'),
+            loop: true,
+            autoplay: true,
+            path: 'location.json'
+        });
+    </script>
+
+</html>

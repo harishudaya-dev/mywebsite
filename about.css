@@ -1,0 +1,1219 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-nav {
+    position: relative;
+    z-index: 3;
+    background-color: #ffffff;
+}
+
+.logoo {
+    width: 250px;
+     position: relative;
+    right: 100px;
+}
+
+.nav-link {
+    color: black !important;
+    margin-left: 15px;
+}
+
+.video-section {
+    position: relative;
+    width: 100%;
+    top: 80px;
+}
+
+@media (max-width:768px) {
+    .video-section img {
+        position: relative;
+        width: 375px;
+        height: 200px;
+    }
+}
+
+.img {
+    width: 80px;
+    height: 80vh;
+    object-fit: cover;
+    display: block;
+}
+.loader-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hideLoader 1s forwards;
+  z-index: 9999;
+}
+
+
+.loggo {
+  width: 220px;
+  animation: zoom 2s infinite alternate;
+}
+
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+
+@keyframes hideLoader {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    z-index: 1;
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.video-text h1 {
+    font-size: 190px;
+    font-weight: bold;
+}
+
+.video-text p {
+    font-size: 25px;
+}
+
+@media (max-width:768px) {
+    .logo {
+        width: 180px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .video-text h1 {
+        position: relative;
+        font-size: 80px;
+    }
+
+    .video-text p {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .amaps {
+        top: 30px;
+    }
+
+    .amaps p {
+        font-size: clamp(28px, 8vw, 40px);
+        font-weight: 900;
+        line-height: 1.3;
+        width: 90%;
+        max-width: 280px;
+        margin: auto;
+        text-align: center;
+    }
+
+}
+
+
+.amaps {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    padding: 0 15px;
+}
+
+.amaps p {
+    font-size: 60px;
+    line-height: 1.3;
+    font-weight: 900;
+}
+
+@media (max-width:768px) {
+    .scroll-container {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        bottom: 1050px;
+    }
+
+    .scroll-text {
+        position: relative;
+    }
+}
+
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    background: #f1f1f1;
+    padding: 10px 0;
+    position: relative;
+    bottom: 380px;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    gap: 10em;
+    animation: scroll-left 15s linear infinite;
+
+}
+
+@keyframes scroll-left {
+    0% {
+
+        transform: translateX(100%);
+
+    }
+
+    100% {
+
+        transform: translateX(-100%);
+    }
+}
+
+#col {
+    color: blue;
+}
+.pictures{
+    position: relative;
+    bottom: 100px;
+}
+.pic-one {
+    position: relative;
+    top: 250px;
+    margin-left: 200px;
+}
+
+.pic-one img {
+    position: relative;
+    border-radius: 20px;
+}
+
+.content {
+    position: relative;
+    margin-left: 700px;
+    bottom: 150px;
+}
+
+.para {
+    position: relative;
+    top: 30px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.para-2 {
+    position: relative;
+    top: 40px;
+    font-weight: 600;
+
+}
+
+.para-3 {
+    position: relative;
+    top: 50px;
+    font-weight: 600;
+}
+
+.para-4 {
+    position: relative;
+    top: 50px;
+    font-weight: 600;
+}
+
+.laern {
+    position: relative;
+    border: 1px solid;
+    width: 350px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    border-radius: 10px;
+    right: 470px;
+    bottom: 80px;
+    border-color: transparent;
+    box-shadow: 0px 20px 20px black;
+}
+
+.pic-two {
+    position: relative;
+    margin-left: 900px;
+}
+
+.pic-two img {
+    position: relative;
+    border-radius: 20px;
+}
+
+.content-two {
+    position: relative;
+    bottom: 380px;
+    margin-left: 200px;
+}
+
+.para-one {
+    position: relative;
+    font-weight: 600;
+    top: 30px;
+}
+
+.para-two {
+    position: relative;
+    font-weight: 600;
+    top: 50px;
+}
+
+.para-three {
+    position: relative;
+    font-weight: 600;
+    top: 50px;
+}
+
+.learn {
+    position: relative;
+    width: 300px;
+    border: 1px solid;
+    text-align: center;
+    color: white;
+    border-color: transparent;
+    box-shadow: 0px 20px 20px black;
+    background-color: gray;
+    border-radius: 10px;
+    margin-left: 800px;
+    bottom: 100px;
+}
+
+.dir {
+    position: relative;
+    height: 80vh;
+    bottom: 150px;
+}
+
+.pic-three {
+    position: relative;
+    top: 100px;
+    margin-left: 200px;
+}
+
+.pic-three img {
+    position: relative;
+    border-radius: 20px;
+}
+.lastt{
+    position: relative;
+    bottom: 250px;
+}
+.laernn {
+    position: relative;
+    border: 1px solid;
+    width: 350px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    border-radius: 10px;
+    right: 470px;
+    bottom: 140px;
+    border-color: transparent;
+    box-shadow: 0px 20px 20px black;
+}
+
+.aboutt {
+    position: relative;
+    margin-left: 100px;
+    bottom: 350px;
+    text-align: justify;
+}
+
+.tru h3 {
+    color: green;
+    font-size: 16px;
+    position: relative;
+    margin-left: 200px;
+}
+
+#above{
+    position: relative;
+    text-align: justify;
+}
+.tru h1 {
+    font-size: 50px;
+    font-weight: 900;
+    margin-left: 200px;
+}
+
+.para-four {
+    position: relative;
+    line-height: 30px;
+    margin-left: 130px;
+    top: 30px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.para-five {
+    position: relative;
+    line-height: 30px;
+    margin-left: 130px;
+    top: 30px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.para-six {
+    position: relative;
+    line-height: 30px;
+    margin-left: 130px;
+    top: 30px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.para-seven {
+    position: relative;
+    line-height: 30px;
+    margin-left: 130px;
+    top: 30px;
+    font-weight: 600;
+    text-align: justify;
+
+}
+
+.logo-one {
+    position: relative;
+    margin-left: 200px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+
+.logo-one img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-one img:hover {
+    transform: scale(1.1);
+}
+
+.logo-one p {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
+.logo-two {
+    position: relative;
+    margin-left: 500px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    bottom: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.logo-two img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+    top: 10px;
+}
+
+.logo-two img:hover {
+    transform: scale(1.1);
+}
+
+.logo-two p {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-three {
+    position: relative;
+    margin-left: 800px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    bottom: 800px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.logo-three img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+    top: 10px;
+}
+
+.logo-three img:hover {
+    transform: scale(1.1);
+}
+
+.logo-three p {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-four {
+    position: relative;
+    margin-left: 1100px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    bottom: 1200px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.logo-four img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+    top: 10px;
+}
+
+.logo-four img:hover {
+    transform: scale(1.1);
+}
+
+.logo-four p {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logos {
+    position: relative;
+    height: 40vh;
+   bottom: 230px;
+}
+
+.logo-five {
+    position: relative;
+    margin-left: 200px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    bottom: 1150px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.logo-five img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+}
+
+.logo-five img:hover {
+    transform: scale(1.1);
+}
+
+.logo-five p {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-six {
+    position: relative;
+    margin-left: 500px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    bottom: 1550px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.logo-six img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+    top: 10px;
+}
+
+.logo-six img:hover {
+    transform: scale(1.1);
+}
+
+.logo-six p {
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-seven {
+    position: relative;
+    margin-left: 800px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    bottom: 1950px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.logo-seven img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+    top: 10px;
+}
+
+.logo-seven img:hover {
+    transform: scale(1.1);
+}
+
+.logo-seven p {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-eight {
+    position: relative;
+    margin-left: 1100px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    bottom: 2350px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.logo-eight img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+    top: 10px;
+}
+
+.logo-eight img:hover {
+    transform: scale(1.1);
+}
+
+.logo-eight p {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-nine {
+    position: relative;
+    margin-left: 200px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    bottom: 2300px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.logo-nine img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+    top: 20px;
+}
+
+.logo-nine img:hover {
+    transform: scale(1.1);
+}
+
+.logo-nine p {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-ten {
+    position: relative;
+    margin-left: 500px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    bottom: 2700px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.logo-ten img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+    top: 10px;
+}
+
+.logo-ten img:hover {
+    transform: scale(1.1);
+}
+
+.logo-ten p {
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-eleven {
+    position: relative;
+    margin-left: 800px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    bottom: 3100px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.logo-eleven img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+    top: 10px;
+}
+
+.logo-eleven img:hover {
+    transform: scale(1.1);
+}
+
+.logo-eleven p {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-twevel {
+    position: relative;
+    margin-left: 1100px;
+    border: 1px solid;
+    height: 400px;
+    width: 250px;
+    bottom: 3500px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.logo-twevel img {
+    position: relative;
+    margin-left: 20px;
+    transition: 0.1s;
+    top: 10px;
+}
+
+.logo-twevel img:hover {
+    transform: scale(1.1);
+}
+
+.logo-twevel p {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media (max-width:768px) {
+    .col-md-4 {
+        position: relative;
+        top: -10px;
+    }
+
+    .main {
+        position: relative;
+        top: 20px;
+        right: 120px;
+    }
+
+    .text-white {
+        position: relative;
+        height: 120vh;
+    }
+
+    .last {
+        position: relative;
+        top: 20px;
+        right: 160px;
+    }
+
+    .text-dark {
+        top: 1150px;
+        position: relative;
+        height: 120vh;
+        background-color: skyblue;
+    }
+}
+.nav-item{
+    position: relative;
+    right: 500px;
+}
+.text-dark {
+    top: 900px;
+    position: relative;
+    height: 50vh;
+    background-color: skyblue;
+    margin: 0px;
+}
+
+.col-md-4 img {
+    position: relative;
+    width: 160px;
+}
+
+.col-md-4 p {
+    position: relative;
+    top: 10px;
+}
+
+.text-decoration-none {
+    position: relative;
+    line-height: 35px;
+    transition: 0.1s;
+    color: black;
+}
+
+.text-decoration-none:hover {
+    padding-left: 15px;
+    color: white;
+
+}
+
+iframe {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+@media (max-width:768px) {
+
+
+
+    .logoo {
+        width: 180px;
+    }
+
+    .navbar .container {
+        padding: 10px;
+    }
+
+
+
+    .video-section img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .video-text h1 {
+        font-size: 40px;
+    }
+
+    .video-text p {
+        font-size: 14px;
+    }
+
+
+
+    .scroll-container {
+        top: 0;
+    }
+
+    .scroll-text {
+        font-size: 14px;
+    }
+
+
+
+    .amaps {
+        top: 30px;
+    }
+
+    .amaps p {
+        font-size: 32px;
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+
+    .pic-one,
+    .pic-two,
+    .pic-three {
+
+        margin-left: 0;
+        top: 50px;
+        text-align: center;
+    }
+
+    .pic-one img {
+
+        width: 90%;
+    }
+
+    .pic-three img {
+        width: 90%;
+        position: relative;
+        margin-left: 20px;
+    }
+
+    .pic-two img {
+        width: 90%;
+        bottom: 100px;
+    }
+
+    .lastt {
+        position: relative;
+        top: 500px;
+
+    }
+
+    .content,
+    .contenttt,
+    .content-two {
+
+        margin-left: 0;
+        bottom: 0;
+        padding: 20px;
+    }
+
+    .contentt h1 {
+        position: relative;
+        top: 20px;
+    }
+
+    .content-two h1 {
+        position: relative;
+        top: 20px;
+    }
+
+    .laern {
+        position: relative;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+        margin-top: 20px;
+        bottom: 930px;
+        width: 180px;
+        right: 80px;
+
+    }
+
+    .content {
+        top: 100px;
+        position: relative;
+    }
+
+    .laernn {
+        margin: auto;
+        right: 0;
+        bottom: 900px;
+        margin-top: 20px;
+        position: relative;
+        width: 200px;
+        right: 50px;
+    }
+
+    .learn {
+
+        margin: auto;
+        right: 0;
+        bottom: 880px;
+        margin-top: 20px;
+        position: relative;
+        width: 220px;
+        right: 50px;
+
+    }
+
+
+
+
+    .aboutt {
+
+        margin-left: 0;
+        padding: 20px;
+        height: 450vh;
+        top: 500px;
+
+    }
+
+    .tru h3 {
+        position: relative;
+        text-align: center;
+        right: 100px;
+
+    }
+
+    .tru h1 {
+        font-size: 20px;
+        position: relative;
+        margin-left: 130px;
+        text-align: center;
+        white-space: nowrap
+    }
+
+    .tru {
+        position: relative;
+        right: 100px;
+        width: 400px;
+    }
+
+
+
+
+    .logos {
+
+        height: auto;
+    }
+
+
+
+
+    .logo-one,
+    .logo-two,
+    .logo-three,
+    .logo-four,
+    .logo-five,
+    .logo-six,
+    .logo-seven,
+    .logo-eight,
+    .logo-nine,
+    .logo-ten,
+    .logo-eleven,
+    .logo-twevel {
+
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0;
+        margin-top: 20px;
+    }
+
+
+
+    .text-dark {
+
+        top: 200px;
+        height: auto;
+    }
+
+    .col-md-4 {
+
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .last {
+        position: relative;
+        margin-left: 80px;
+    }
+
+    iframe {
+
+        width: 100%;
+        height: 200px;
+    }
+
+}
+.modal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    margin-left: 600px;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+   
+    bottom: -50px;
+}
+.modal-content {
+    background: #fff;
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin: 10% auto;
+}
+
+.modal img{
+    position: relative;
+    align-items: center;
+    position: relative;
+    margin-left: 40px;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+
+.admission-btn {
+    background: linear-gradient(to right, #00c6ff, #00ff99);
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.topone{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin-left: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 8vh;
+}
+
+
+#call{
+    position: relative;
+    width: 50px;
+    margin-left: 50px;
+    bottom: 5px;
+}
+.num{
+    position: relative;
+    text-align: center;
+    top: 15px;
+    right: 50px;
+    font-weight: 500;
+}
+
+.emaill{
+    position: relative;
+    top: 15px;
+    font-weight: 500;
+    right: 20px;
+}
+
+.addres{
+    position: relative;
+    top: 15px;
+    font-weight: 500;
+    right: 40px;
+}

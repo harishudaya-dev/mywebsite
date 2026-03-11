@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/faculty.css">
+    <title>School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="topone">
+        <div id="call"></div>
+        <p class="num">(044) 48676178 / 24766178</p>
+        <div id="mail"></div>
+        <p class="emaill">admin@amaps.edu.in</p>
+        <div id="loca"></div>
+        <p class="addres">Alapakkam Main Road, Porur Post, Chennai – 600116.</p>
+        <p class="coll">Affiliated to CBSE, New Delhi, Affiliation No-1930379</p>
+
+    </div>
+
+    <div class="loader-wrapper">
+        <img src="assets/image/22.png" class="loggo">
+    </div>
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container">
+            <img src="assets/image/amaps-new-logo-g.png" class="logoo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto" style="position: relative; right: -300px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="index.html"
+                                style="position: relative;bottom: 8px; right: 3px; color: black; text-decoration: none;">Home</a></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" data-bs-toggle="dropdown" style="bottom: 100px;margin-left: 20px; position: relative;">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                 
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="gallery.html"
+                                style="color: black; text-decoration: none;position: relative;bottom: 8px;margin-left: 20px;">Gallery</a></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="contact.html"
+                                style="position: relative; bottom: 8px; margin-left: 20px; color: black; text-decoration: none;">Contact</a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="Mandatory .html"
+                                style="position: relative; bottom: 8px; margin-left: 20px; color: black; text-decoration: none;">Mandatory
+                                Disclosure</a></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="second">
+                <a href="https://mat.org.in/" style="cursor: pointer;" target="_blank">
+                    <img src="assets/image/MGI-Logo1.png" width="200px"></a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="admissionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+
+            <img src="assets/image/qr.jpg" alt="QR Code" width="200">
+
+            <p>SCAN HERE FOR ADMISSION</p>
+
+            <button class="admission-btn"><a href="enquiry.html" style="text-decoration: none; color: black;">Click Here
+                    for Admission</a></button>
+        </div>
+    </div>
+    <section class="video-section">
+        <img src="assets/image/dental_orientation.jpg" width="1520px" height="500px">
+        <div class="overlay"></div>
+        <div class="video-text">
+            <p id="text" style="font-size: 50px;">FACULTY</p>
+            <p>Home > Faculty</p>
+        </div>
+    </section>
+    <div class="scroll-container">
+        <div class="scroll-text">
+            Admission for KG to class VII is in progress. | A few vacancies in all subjects are available. Send your
+            resumes to <span id="col"> director24.meenakshi@gmail.com.</span>
+        </div>
+    </div>
+    <div class="amaps">
+        <p id="animatedText">
+            Meet Our Dedicated Teachers at AMAPS -Expert
+            CBSE Educators in Porur, Chennai
+        </p>
+    </div>
+
+
+    <div class="container" style="position: relative; top: 150px;">
+        <h2 class="text-center mb-4">Our Pillars</h2>
+
+        <div class="mb-3">
+            <label>Show </label>
+            <select id="rowsSelect" onchange="changeRowsPerPage(this.value)">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+            </select>
+
+        </div>
+
+
+
+        <table id="facultyTable" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Qualification</th>
+                    <th>Designation</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>Sandhya Bhat</td>
+                    <td>M.Sc, M.Ed</td>
+                    <td>Principal</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mangalam N</td>
+                    <td>M.A</td>
+                    <td>PRT</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Kumar R</td>
+                    <td>M.A</td>
+                    <td>PET</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sudha M</td>
+                    <td>D.P.Ed</td>
+                    <td>PRT</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Lakshmi M</td>
+                    <td>M.A</td>
+                    <td>TGT</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Bhagavathi N</td>
+                    <td>M.Sc</td>
+                    <td>TGT</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Padmavathi A</td>
+                    <td>M.Sc</td>
+                    <td>TGT</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Anbusankari S</td>
+                    <td>M.A</td>
+                    <td>TGT</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Annapoorna K</td>
+                    <td>M.A</td>
+                    <td>Hindi</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Suganthi V</td>
+                    <td>B.Sc</td>
+                    <td>TGT</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Jeyanthi K</td>
+                    <td>M.Sc</td>
+                    <td>TGT</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Aruna V</td>
+                    <td>B.A</td>
+                    <td>Hindi</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Rajeswari P</td>
+                    <td>M.Sc</td>
+                    <td>PRT</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Jayanthi S</td>
+                    <td>B.Lit</td>
+                    <td>PRT</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Dhanalakshmi S</td>
+                    <td>M.Sc</td>
+                    <td>PRT</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Boomija R</td>
+                    <td>M.A</td>
+                    <td>TGT</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Jaisree S</td>
+                    <td>B.Sc</td>
+                    <td>KG</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Saranya M</td>
+                    <td>M.Sc</td>
+                    <td>PRT</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Sangeetha K</td>
+                    <td>B.A</td>
+                    <td>PRT</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Vijayalakshmi N</td>
+                    <td>MCA</td>
+                    <td>KG</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Archana A</td>
+                    <td>M.Sc</td>
+                    <td>TGT</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Tamil Selvi N</td>
+                    <td>M.Sc</td>
+                    <td>Librarian</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Saravanan P</td>
+                    <td>Music</td>
+                    <td>Part-Time</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Anandha Kumari</td>
+                    <td>Arts</td>
+                    <td>Part-Time</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <nav>
+            <ul class="pagination justify-content-center" id="pagination"></ul>
+        </nav>
+
+    </div>
+
+    <footer class=" text-dark pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/image/amaps-b.png">
+                    <p>
+                        Arulmigu Meenakshi Amman Public School,
+                        Porur, Chennai.
+                    </p>
+                </div>
+                <div class="col-md-4 main">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled mainn">
+                        <li><a href="#" class="text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-decoration-none">Mandatory</a></li>
+                        <li><a href="#" class="text-decoration-none">Faculty</a></li>
+                        <li><a href="#" class="text-decoration-none">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 last">
+                    <h5>Location</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15547.368265143805!2d80.165082!3d13.045723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526117e3805051%3A0xe285805e419b4630!2sArulmigu%20Meenakshi%20Amman%20Public%20School!5e0!3m2!1sen!2sus!4v1771629178960!5m2!1sen!2sus"
+                        width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">
+                    © 2026 AMAPS School. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <a href="#top" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <script>
+        let currentPage = 1;
+        let rowsPerPage = 10;
+
+        const table = document.getElementById("facultyTable");
+        const tbody = table.querySelector("tbody");
+        const rows = tbody.querySelectorAll("tr");
+
+        function displayRows() {
+            rows.forEach(row => row.style.display = "none");
+
+            let start = (currentPage - 1) * rowsPerPage;
+            let end = start + rowsPerPage;
+
+            for (let i = start; i < end && i < rows.length; i++) {
+                rows[i].style.display = "";
+            }
+        }
+
+        function createPagination() {
+            const pagination = document.getElementById("pagination");
+            pagination.innerHTML = "";
+
+            let totalPages = Math.ceil(rows.length / rowsPerPage);
+
+
+            let prev = document.createElement("li");
+            prev.className = "page-item";
+            prev.innerHTML = `<a href="#" class="page-link">Previous</a>`;
+            prev.onclick = function (e) {
+                e.preventDefault();
+                changePage(currentPage - 1);
+            };
+            pagination.appendChild(prev);
+
+
+            for (let i = 1; i <= totalPages; i++) {
+                let li = document.createElement("li");
+                li.className = "page-item";
+
+                let link = document.createElement("a");
+                link.href = "#";
+                link.className = "page-link";
+                link.innerText = i;
+
+                if (i === currentPage) {
+                    link.classList.add("active-page");
+                }
+
+                link.onclick = function (e) {
+                    e.preventDefault();
+                    changePage(i);
+                };
+
+                li.appendChild(link);
+                pagination.appendChild(li);
+            }
+
+
+            let next = document.createElement("li");
+            next.className = "page-item";
+            next.innerHTML = `<a href="#" class="page-link">Next</a>`;
+            next.onclick = function (e) {
+                e.preventDefault();
+                changePage(currentPage + 1);
+            };
+            pagination.appendChild(next);
+        }
+
+        function changePage(page) {
+            let totalPages = Math.ceil(rows.length / rowsPerPage);
+
+            if (page < 1) page = 1;
+            if (page > totalPages) page = totalPages;
+
+            currentPage = page;
+            displayRows();
+            createPagination();
+        }
+
+        function changeRowsPerPage(value) {
+            rowsPerPage = parseInt(value);
+            currentPage = 1;
+            displayRows();
+            createPagination();
+        }
+
+        displayRows();
+        createPagination();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+
+
+            const animatedText = document.getElementById("animatedText");
+
+            if (animatedText) {
+                let words = animatedText.innerHTML.split(" ");
+                animatedText.innerHTML = words.map(word =>
+                    `<span class="word">${word}</span>`
+                ).join(" ");
+
+                const wordElements = document.querySelectorAll(".word");
+
+                anime({
+                    targets: wordElements,
+                    translateY: ['20px', '-20px'],
+                    direction: 'alternate',
+                    loop: true,
+                    delay: anime.stagger(400),
+                    easing: 'easeInOutQuad'
+                });
+
+                wordElements.forEach(word => {
+                    word.addEventListener("mouseenter", function () {
+                        anime({
+                            targets: word,
+                            color: ['#FF4B4B', '#57F695', '#FFCC2A'],
+                            duration: 300
+                        });
+                    });
+                });
+            }
+
+
+
+            const letterText = document.getElementById("text");
+
+            if (letterText) {
+                const letters = letterText.textContent.trim().split("");
+                letterText.innerHTML = letters.map(l =>
+                    l === " "
+                        ? `<span class="letter">&nbsp;</span>`
+                        : `<span class="letter">${l}</span>`
+                ).join("");
+
+                anime({
+                    targets: '.letter',
+                    translateY: [
+                        { value: 25, duration: 400 },
+                        { value: 0, duration: 400 }
+                    ],
+                    opacity: [
+                        { value: 5.5, duration: 200 },
+                        { value: 1, duration: 400 }
+                    ],
+                    scale: [
+                        { value: 2.0, duration: 1000 },
+                        { value: 1, duration: 1000 }
+                    ],
+                    easing: "easeInOutQuad",
+                    delay: anime.stagger(80),
+                    loop: true
+                });
+            }
+
+        });
+    </script>
+    <script>
+        function closeModal() {
+            document.getElementById("admissionModal").style.display = "none";
+        }
+    </script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('call'),
+            loop: true,
+            autoplay: true,
+            path: 'call.json'
+        });
+    </script>
+
+     <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('mail'),
+            loop: true,
+            autoplay: true,
+            path: 'email.json'
+        });
+    </script>
+
+        <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('loca'),
+            loop: true,
+            autoplay: true,
+            path: 'location.json'
+        });
+    </script>
+</body>
+
+</html>

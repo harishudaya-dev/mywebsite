@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<style>
+    .letter-welcome,
+    .letter-amaps {
+        display: inline-block;
+    }
+
+    html {
+        scroll-behavior: smooth;
+
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: white;
+        border-color: green;
+        color: white;
+        font-size: 22px;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 50%;
+        transition: 0.3s;
+        border: 1px solid;
+    }
+
+    .back-to-top:hover {
+        background-color: #ffffff;
+    }
+
+    .back-to-top i {
+        color: green;
+    }
+
+    .letter-founder {
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <div class="topone">
+        <div id="call"></div>
+        <p class="num">(044) 48676178 / 24766178</p>
+        <div id="mail"></div>
+        <p class="emaill">admin@amaps.edu.in</p>
+        <div id="loca"></div>
+        <p class="addres">Alapakkam Main Road, Porur Post, Chennai – 600116.</p>
+        <p class="coll">Affiliated to CBSE, New Delhi, Affiliation No-1930379</p>
+
+    </div>
+
+
+    <div class="loader-wrapper">
+        <img src="assets/image/22.png" class="loggo">
+    </div>
+
+    <body id="top"></body>
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container">
+            <img src="assets/image/amaps-new-logo-g.png" class="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto" style="position: relative; right: -100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="about.html"
+                            style="bottom: 00px;margin-left: 20px; position: relative;">
+                            <a href="about.html"
+                                style="color: black; text-decoration: none; position: relative; bottom: 8px; margin-left:9px;">About</a>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="gallery.html"
+                                style="color: black; text-decoration: none;position: relative;bottom: 8px;margin-left: 20px;">Gallery</a></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="faculty.html"
+                                style="position: relative; bottom:8px; margin-left: 20px; color: black; text-decoration: none;">Faculty</a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="contact.html"
+                                style="position: relative; bottom: 8px; margin-left: 20px; color: black; text-decoration: none;">Contact</a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><a href="Mandatory .html"
+                                style="position: relative; bottom: 8px; margin-left: 20px; color: black; text-decoration: none;">Mandatory
+                                Disclosure</a></a>
+                    </li>
+                </ul>
+            </div>
+            <a href="https://mat.org.in/" style="cursor: pointer;" target="_blank">
+                <div class="second">
+
+                    <img src="assets/image/MGI-Logo1.png" width="200px">
+                </div>
+            </a>
+        </div>
+    </nav>
+    <div id="admissionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+
+            <img src="assets/image/qr.jpg" alt="QR Code" width="200">
+
+            <p>SCAN HERE FOR ADMISSION</p>
+
+            <button class="admission-btn"><a href="enquiry.html" style="text-decoration: none; color: black;">Click Here
+                    for Admission</a></button>
+        </div>
+    </div>
+    <section class="video-section">
+        <video autoplay loop muted playsinline class="video">
+            <source src="assets/video/school-ad.webm" type="video/mp4">
+        </video>
+
+        <div class="video-text">
+            <h1 id="text" style="font-size: 172px;"> Welcome</h1>
+            <p>Our School Website</p>
+        </div>
+    </section>
+    <div class="scroll-container">
+        <div class="scroll-text">
+            Admission for KG to class VII is in progress. | A few vacancies in all subjects are available. Send your
+            resumes to <span id="col"> director24.meenakshi@gmail.com.</span>
+        </div>
+    </div>
+    <div class="amaps">
+        <p class="animate-text">AMAPS Grievance Cell - Addressing Concerns & Feedback for a Better Learning
+            Environment<br>
+        </p>
+    </div>
+
+
+    <section class="sideimage">
+        <a href="gallery.html">
+            <img src="assets/image/gallery.png"></a>
+    </section>
+
+    <section class="sideimagee">
+        <a href="contact.html">
+            <img src="assets/image/c.png"></a>
+    </section>
+
+
+    <section class="containerr">
+        <div class="textt">
+            <h3>Arulmigu Meenakshi Amman Public School</h3>
+        </div>
+
+        <div class="texttt">
+            <p>Explore Skills With AMAPS <br>Campus</p>
+        </div>
+
+        <div class="para">
+            <p>God's greatest gift to Man is knowledge. Knowledge can not only be<br> discovered but also created
+                through experiential learning. It is the only<br> gift of God that is not subject to diminishing
+                returns.<br></p>
+        </div>
+
+        <div class="parra">
+            <p> The school aims to build a strong young generation with a sound mind <br>in a sound body. Habits
+                conducive to a fuller, more purposeful, and<br> nobler life to blossom into an integrated personality to
+                realise the goal <br> of education are nutured in students.</p>
+        </div>
+
+      
+        <button class="button" >
+            <a href="contact.html" style="text-decoration: none; position: relative; ">contact us</a>
+        </button>
+
+        <div class="img">
+            <img class="zero" src="assets/image/02.jpg" width="700px">
+        </div>
+    </section>
+
+    <section id="founder">
+        <div class="our">
+            <p>Our Esteemed Founder Trustees</p>
+            <p class="vis">Our Visionaries</p>
+        </div>
+        <div class="picture">
+            <img class="one" src="assets/image/member1.webp">
+            <img class="two" src="assets/image/member2.webp">
+            <img class="three" src="assets/image/member3.webp">
+        </div>
+
+        <div class="person-text">
+            <div class="onee">
+                <h4>Late Smt.Meenakshi Ammal</h4>
+                <h6>An eternal and inspirational soul for<br> her successor's tremendous<br> achievement.</h6>
+                <p> Founder Chairperson</p>
+            </div>
+
+            <div class="twoo">
+                <h4>Late Shri.A.N. Radhakrishnan,<br> M.A., D.Com.</h4>
+                <h6>An unshakable eminent personality,<br> an enlightened forerunner for the <br>Institution's
+                    reputation and goodwill<br> of faculty members.</h6>
+                <p> Founder Managing Trustee</p>
+            </div>
+
+            <div class="threee">
+                <h4>Smt. R. Gomathi</h4>
+                <h6>An astute and energetic front-runner<br> for the incredible evolution of the<br> institution.</h6>
+                <p> Founder Trustee</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="cart">
+        <div class="cardd">
+            <i class="fa-regular fa-envelope icon"></i>
+            <h3>POCSO/Grievances/Suggestion</h3>
+            <h4>directorschools@mat.org.in</h4>
+        </div>
+        <div class="cardd">
+            <i class="fa-regular fa-envelope icon"></i>
+            <h3>Principal</h3>
+            <h4>principal@amaps.edu.in</h4>
+        </div>
+        <div class="cardd">
+            <i class="fa-regular fa-envelope icon"></i>
+            <h3>School</h3>
+            <h4>arulmigumeenakshi1@gmail.com</h4>
+        </div>
+    </section>
+
+    <section class="latest">
+        <h5>NEWS</h5>
+        <h2>Latest News</h2>
+
+        <div class="carousel-wrapper">
+            <button class="nav-btn left">&#10094;</button>
+
+            <div class="flex" id="newsSlider">
+
+                <div class="card">
+                    <img src="https://www.amaps.edu.in/uploads/recent_news/stroke-day.webp">
+                    <div class="date">October 29, 2025</div>
+                    <div class="text-on-image">World Stroke Day</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.amaps.edu.in/uploads/recent_news/animation-day.webp">
+                    <div class="date">October 28, 2025</div>
+                    <div class="text-on-image">Animation Day</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.amaps.edu.in/uploads/recent_news/polio-day.webp">
+                    <div class="date">October 24, 2025</div>
+                    <div class="text-on-image">World Polio Day</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.amaps.edu.in/uploads/recent_news/diwali.webp">
+                    <div class="date">October 20, 2025</div>
+                    <div class="text-on-image">Diwali Celebration</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.amaps.edu.in/uploads/recent_news/eradication-of-poverty.webp">
+                    <div class="date">October 17, 2025</div>
+                    <div class="text-on-image">Eradication of Poverty Day</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.amaps.edu.in/uploads/recent_news/food-day.webp">
+                    <div class="date">October 16, 2025</div>
+                    <div class="text-on-image">World Food Day</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.amaps.edu.in/uploads/recent_news/dictionary-day.webp">
+                    <div class="date">October 16, 2025</div>
+                    <div class="text-on-image">Dictionary Day</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.amaps.edu.in/uploads/recent_news/students-day.webp">
+                    <div class="date">October 15, 2025</div>
+                    <div class="text-on-image">Students Day</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.amaps.edu.in/uploads/recent_news/standards-day.webp">
+                    <div class="date">October 14, 2025</div>
+                    <div class="text-on-image">World Standards Day</div>
+                </div>
+
+            </div>
+
+            <button class="nav-btn right">&#10095;</button>
+        </div>
+    </section>
+
+
+
+    <footer class=" text-dark pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/image/amaps-b.png">
+                    <p>
+                        Arulmigu Meenakshi Amman Public School,
+                        Porur, Chennai.
+                    </p>
+                </div>
+                <div class="col-md-4 main">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled mainn">
+                        <li><a href="#" class="text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-decoration-none">Mandatory Disclosure</a></li>
+                        <li><a href="#" class="text-decoration-none">Faculty</a></li>
+                        <li><a href="#" class="text-decoration-none">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 last">
+                    <h5>Location</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15547.368265143805!2d80.165082!3d13.045723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526117e3805051%3A0xe285805e419b4630!2sArulmigu%20Meenakshi%20Amman%20Public%20School!5e0!3m2!1sen!2sus!4v1771629178960!5m2!1sen!2sus"
+                        width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">
+                    © 2026 AMAPS School. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <a href="#top" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            /* ===== WELCOME TEXT ANIMATION ===== */
+            const welcomeText = document.getElementById("text");
+
+            if (welcomeText) {
+                const letters = welcomeText.textContent.split("");
+                welcomeText.innerHTML = letters
+                    .map(l => l === " " ? " " : `<span class="letter-welcome">${l}</span>`)
+                    .join("");
+
+                anime({
+                    targets: '.letter-welcome',
+                    translateY: [0, -50, 0],
+                    duration: 1000,
+                    easing: "easeInOutSine",
+                    loop: true,
+                    delay: anime.stagger(80)
+                });
+            }
+
+
+            const textWrapper = document.querySelector(".animate-text");
+
+            if (textWrapper) {
+
+                // Split text but preserve <br>
+                const lines = textWrapper.innerHTML.split("<br>");
+
+                textWrapper.innerHTML = lines.map(line => {
+                    return line.split("").map(char => {
+                        if (char === " ") return " ";
+                        return `<span class="letter-amaps">${char}</span>`;
+                    }).join("");
+                }).join("<br>");
+
+                anime({
+                    targets: ".letter-amaps",
+                    translateY: ["100%", "0%"],
+                    easing: "easeOutCubic",
+                    duration: 900,
+                    delay: anime.stagger(30),
+                    direction: "alternate",
+                    loop: true
+                });
+            }
+
+            const founderTitle = document.querySelector("#founder .our p:first-child");
+
+            if (founderTitle) {
+
+                const letters = founderTitle.textContent.split("");
+
+                founderTitle.innerHTML = letters
+                    .map(l => l === " " ? " " : `<span class="letter-founder">${l}</span>`)
+                    .join("");
+
+                anime({
+                    targets: '.letter-founder',
+                    translateY: [
+                        { value: -40, duration: 600, easing: "easeOutExpo" },
+                        { value: 0, duration: 800, easing: "easeOutBounce" }
+                    ],
+                    rotate: {
+                        value: "1turn",
+                        duration: 1000
+                    },
+                    delay: anime.stagger(50),
+                    loop: true,
+                    loopDelay: 1000
+                });
+            }
+
+        });
+    </script>
+    <script>
+        function closeModal() {
+            document.getElementById("admissionModal").style.display = "none";
+        }
+    </script>
+    <script>
+        const slider = document.getElementById("newsSlider");
+        const leftBtn = document.querySelector(".left");
+        const rightBtn = document.querySelector(".right");
+
+        let scrollAmount = 0;
+        const cardWidth = 350;
+
+        // Manual buttons
+        rightBtn.addEventListener("click", () => {
+            slider.scrollLeft += cardWidth;
+        });
+
+        leftBtn.addEventListener("click", () => {
+            slider.scrollLeft -= cardWidth;
+        });
+
+        // Auto Scroll
+        function autoScroll() {
+            slider.scrollLeft += 1;
+
+            if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
+                slider.scrollLeft = 0;
+            }
+        }
+
+        setInterval(autoScroll, 20);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('call'),
+            loop: true,
+            autoplay: true,
+            path: 'call.json'
+        });
+    </script>
+
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('mail'),
+            loop: true,
+            autoplay: true,
+            path: 'email.json'
+        });
+    </script>
+
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('loca'),
+            loop: true,
+            autoplay: true,
+            path: 'location.json'
+        });
+    </script>
+</body>
+
+</html>
